@@ -2,7 +2,7 @@ const Clarifai =  require('clarifai');
 const { json } = require('express');
 
 const app = new Clarifai.App({
-  apiKey: '4ffd58708e284020865ec6e3cf474b1f'
+  apiKey: process.env.API_CLARIFAI
 });
 
 // .predict('c0c0ac362b03416da06ab3fa36fb58e3', this.state.input)
